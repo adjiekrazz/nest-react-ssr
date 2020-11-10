@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "target": "esnext",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "ssr.config.js",
+    ".ssr"
+  ]
 }
